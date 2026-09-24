@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active:
+      - local # 激活本地配置
+  application:
+    name: oauth2-login-demo
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Ov23lipgxSjDbhG74weD
+            client-secret: f0aa5f0db4b3e03cff99a353ad0220435e68c21f
+
+# 如果使用了加速器一定要加VM启动参数
+# -Djavax.net.ssl.trustStoreType=Windows-ROOT -Djavax.net.ssl.trustStore=NULL
